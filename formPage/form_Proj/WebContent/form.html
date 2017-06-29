@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>hammered</title>
+<script src="formvalid.js">
+    </script>
+</head>
+<body background="bg1.jpg">
+<strong style="color:white"><form name="myform" action="fs" method="post" align="center" ">
+<caption><h1 style="color:#efff4d">Mashup</h1></caption>
+<h2><marquee bgcolor="#fcca77" style="color:#8c3380">"discover the inner beauty of occurrence"</marquee></h2>
+
+<fieldset>
+Username:
+<input type ="text"  Placeholder=" Enter User-name" name="user" onkeyup="userValid()" required> <span name="userMsg"></span>
+ <br><br>
+password:<input type="password" name ="pas" onkeyup="validate()" required>
+    <span name="msg"></span>
+<br><br>
+Select gender:
+
+<input type ="radio" value="Male" name="gender" checked >male
+
+<input type ="radio" value="Female" name="gender" >female
+
+<input type ="radio" value="Others" name="gender">others
+</fieldset>
+ 
+<br><br>
+Select Courses:
+<input type ="checkbox" name="c1" value="Film making"  >film making
+<input type ="checkbox" name="c2" value="Music" >Music
+<input type ="checkbox" name="c3" value="Dance" >Dance
+<input type ="checkbox" name="c4"value="Photography" >photography
+<br><br>
+DOB:
+<input type ="date" >
+<br><br>
+Select city:
+<select name="place">
+<option>--select--</option>
+<option>bangalore</option>
+<option>mysore</option>
+<option>Mangalore</option>
+</select>
+<br><br>
+Mobile number:
+<input type ="text" placeholder="1234567890" name="mobno"  maxlength=10 onsubmit="ValidateMobileNO()" ><span name="alertmsg"></span>
+<br><br>
+Email-id:
+<input type = "text" placeholder="xyz@abcd.com" name="eid"onkeyup="validateEmailId()" ><span name="msg123"></span>
+<br><br>
+Address:
+<textarea rows="5" cols="40"></textarea>
+<br><br>
+Upload Projects:
+
+<input type="file" name="file" placeholder="(eg: .pdf,.docx,.xml)" multiple>
+<br><br>
+
+<input type ="submit" value="Register">
+<input type ="reset">
+</form></strong>
+</body>
+</html>
